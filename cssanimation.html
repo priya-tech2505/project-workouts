@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container{
+            background-color:aqua;
+        }
+        
+        .priya{
+           /* margin-left: 500px; 
+            margin-top: 200px;*/
+            /* width: 300px; */
+            /* translate */
+            /* transform: translateX(500px); */
+            /* transform: translateY(500px); */
+            /* transform: translate(500px,400px); */
+
+            /* rotate */
+            /* transform: rotateX(240deg); */
+            /* transform: rotateY(220deg); */
+            /* transform: rotateZ(220deg); */
+            /* transform: rotate(150deg); */
+
+            /* scale(zoom) */
+            /* transform: scaleX(3); */
+            /* transform: scaleY(4); */
+            /* transform: scale(5,3); */
+
+            /* skew */
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+            /* transform: skew(30deg); */
+        }
+        .priya:hover{
+            /* width:800px; */
+            /* transition: width 5s ease-in-out; */
+            transform: translateX(400px) translateY(400px) rotate(360deg);
+          /*  transition-property: transform;
+            transition-duration: 10s;
+            transition-timing-function: ease;*/
+            /* transform: rotate(100deg) scale(6); */
+             transition: transform 7s ease-in-out; 
+            /* transition-delay: 1s; */
+             /* transition: transform 7s ease;  */
+        }
+
+    </style>
+</head>
+<body class="container">
+<img src="images-removebg-preview.png" alt="plane" class="priya">    
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        .box{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chocolate;
+            animation-name: boxcolor;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+         
+        @keyframes boxcolor {
+            25% {
+                background-color: red;
+                left: 500px;
+                top: 20px;
+            }
+            50% {
+                background-color: aqua;
+                top: 500px;
+                left: 500px;
+            }
+            75% {
+                background-color: chartreuse;
+                top: 500px;
+                left: 20px;
+            }
+            100% {  
+                background-color: yellow;
+                top: 500px;
+                left: 20px;
+            }
+        }
+        /* @keyframes - set of rules
+         
+        animation-name
+        animation-duration
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-timing-function
+        animation-fill-mode
+        animation*/
+
+       /* animation direction
+       noraml-->forward (default) 
+       reverse-->reverse direction (backward)
+       alternate-->forward firsr then backward
+       alternate-reverse-->backward first,then forward.*/
+
+     /*  animation-timing-function
+       ease--> slow start,then fast,then and slowly
+       ease-in--> slow start
+       ease out--> slow end
+       ease-in-out--> slow start and end
+       linear--> same speed from start to end
+       cubic-bezier(n,n,n,n)--> own values (optional).*/
+
+      /* animation-fill-mode
+       none--> default value
+       forward--> last keyframe value
+       backward--> first keyframe value
+       both--> first keyframe to last keyframe*/
+
+      /* animation short hand
+       animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        Animation box
+    </div>
+</body>
+</html>

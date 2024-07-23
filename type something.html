@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="=text" placeholder="Type something..." oninput="displayText(event)"> <br>
+    <p id="content"></p>
+    <button onclick="replace">Replace</button>
+    <button onclick="toUpperCase">toUppercase</button>
+    <button onclick="toLowerCase">toLowercse</button>
+</body>
+<script>
+function displayText(event){
+    const text = event.target.value
+    document.getElementById("content").innerHTML = text
+    console.log(text);
+  let type = event.target.value(event)
+  }
+
+    // console.log(str.toUpperCase(content));
+    // console.log(str.toLowerCase(content));
+
+}
+
+</script>
+</html>

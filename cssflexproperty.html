@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Property</title>
+    <style>
+        .flex-container{
+            display: flex;
+            width: 800px;
+            height: 600px;
+            flex-direction:row;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            align-content: flex-start;
+            color:aqua;
+            background-color:black;
+        }
+        .items{
+            background-color: blue;
+            /* width: 100px; */
+            /* height: 100px; */
+            padding: 50px;
+            margin: 10px;
+            text-align:start;
+            line-height: 80px;
+            font-size: 40px;
+        }
+        #box1{
+            order: 5;
+        }
+        #box2{
+            order: 4;
+        }
+        #box3{
+            order: 3;
+        }
+        #box4{
+        order: 2;
+        }
+        #box5{
+        order: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="flex-conainer">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+    </div> -->
+    <div class="flex-conainer">
+        <div class="items" id="box1">1</div>
+        <div class="items" id="box2">2</div>
+        <div class="items" id="box3">3</div>
+        <div class="items" id="box4">4</div>
+        <div class="items" id="box5">5</div>
+    </div>
+    
+</body>
+</html>

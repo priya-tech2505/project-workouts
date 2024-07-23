@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Keyframe Numbers</title>
+    <style>
+    .a{
+        position:fixed;
+            left: 20px;
+            top: 20px;
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chocolate;
+            animation-name: a;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        .b{
+            position:absolute;
+            left: 20px;
+            top: 20px;
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chocolate;
+            animation-name: b;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        .c{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chocolate;
+            animation-name: c;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        .d{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chocolate;
+            animation-name: d;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes a{
+            25% {
+                background-color: red;
+                left: 500px;
+                top: 20px;
+            }
+            50% {
+                background-color: aqua;
+                top: 500px;
+                left: 500px;
+            }
+            75% {
+                background-color: chartreuse;
+                top: 500px;
+                left: 20px;
+            }
+            100% {  
+                background-color: yellow;
+                top: 500px;
+                left: 20px;
+            }
+        }
+        @keyframes b{
+            25% {
+                background-color: red;
+                left: 300px;
+                top: 20px;
+            }
+            50% {
+                background-color: aqua;
+                top: 300px;
+                left: 500px;
+            }
+            75% {
+                background-color: chartreuse;
+                top: 300px;
+                left: 20px;
+            }
+            100% {  
+                background-color: yellow;
+                top: 300px;
+                left: 20px;
+            }
+        }
+        @keyframes c{
+            25% {
+                background-color: red;
+                left: 300px;
+                top: 20px;
+            }
+            50% {
+                background-color: aqua;
+                top: 300px;
+                left: 300px;
+            }
+            75% {
+                background-color: chartreuse;
+                top: 300px;
+                left: 20px;
+            }
+            100% {  
+                background-color: yellow;
+                top: 300px;
+                left: 20px;
+            }
+        }
+        @keyframes d{
+            25% {
+                background-color: red;
+                left: 300px;
+                top: 20px;
+            }
+            50% {
+                background-color: aqua;
+                top: 300px;
+                left: 500px;
+            }
+            75% {
+                background-color: chartreuse;
+                top: 300px;
+                left: 20px;
+            }
+            100% {  
+                background-color: yellow;
+                top: 300px;
+                left: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a">
+        1
+    </div><br><br><br>
+
+    <div class="b">
+        2
+    </div><br><br><br>
+
+    <div class="c">
+        3
+    </div><br><br><br>
+
+    <div class="d">
+        4
+    </div><br><br><br>
+
+</body>
+</html>

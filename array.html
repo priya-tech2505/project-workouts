@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+
+    <input id="idemTxt" type="text" placeholder="Type Something...">
+    <input type="button" value="add" onclick="addItem()">
+    <input id="itemValue" type="number" size="2">
+    <input type="button" value="Remove" onclick="removeItem()"> 
+</body>
+<script>
+    let list = []
+    function addItem(){
+        let value = document.getElementById("itemTxt").value
+        let arr = [value]
+        list = arr.concat (list)
+    console.log(list);
+    }    
+    let list = []
+    function removeItem(){
+    let value = document.getElementById("itemValue").value
+    list = splice(value, 1)
+    console.log(list);
+    }
+</script>
+</html>

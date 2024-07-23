@@ -1,0 +1,10 @@
+.container-fluid{
+    color: white;
+}
+.btn-btn-success{
+    border-radius: 50px;
+    float: left;
+  }
+.btn-btn-success:hover{
+    opacity: 0.5
+  }

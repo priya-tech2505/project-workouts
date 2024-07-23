@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // let user = {
+    //     name: "Mukil",
+    //     age: 30,
+    //     gender: "male",
+    //     display: function () {
+    //         alert("User name is " + this.name)
+    //     }
+    // }
+    // console.log(user);
+    // user = {...user, qualification: "Degree"}
+    
+    // console.log(user)
+
+    // const user = new Object()
+    // user.firstName = "Karthika"
+    // user.lastName = "Kanitha"
+    // user.numbers = "12345"
+    // console.log(user)
+    // console.log(user["firstName"] +"" + user["lastName"]);
+    // console.log(user.lastName +"" + user.firstName);
+
+
+const user = {
+    firstName : "Priya",
+    lastName : "Dharshini",
+    marks:{
+        sslc: 700,
+        hsc: 800,
+        degree: 7.5
+    },
+    fullName: function () {
+        return this.firstName + "" + this.lastName
+    }
+}
+console.log(user.firstName)
+console.log(user.marks.degree)
+console.log(user.fullName());
+
+</script>
+
+</body> 
+</html>
