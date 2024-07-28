@@ -26,5 +26,11 @@
     list = splice(value, 1)
     console.log(list);
     }
+    function insertitem(){
+        let text = document.getElementById("itemTxt").value
+        let pos = document.getElementById("itemValue").value
+        list.splice(pos, 0, text)
+        console.log(list);
+    }
 </script>
 </html>

@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<style>
+ .bootsicon{
+        width: 200px;
+    }
+  .btn-btn-success{
+    background-color: rgb(26,144,130);
+    color: white;
+    border-radius: 100px;
+    width: 150px;
+    height: 50px;
+  }
+  .btn-btn-success:hover{
+    background-color: rgb(0,131,116);
+  }
+  .box{
+    position: relative;
+    left: 20px;
+    margin-left: 15px;
+    bottom: 30px;
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+    font-weight: 900px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(0,131,116);
+    margin-top: +20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    direction: flex;
+  }
+  @media screen and (max-width:375px)
+  {
+    .box{
+      position: relative;
+      bottom: 0;
+      margin-top: 20px;
+    }
+    .css{
+      background-color: rgb(26, 144, 130);
+    }
+  }
+    .heading{
+         color: black;
+         font-size: 30px;
+         text-align: center;
+    }
+    .dash{
+        text-align: center;
+        font-size: 50px;
+        margin-top: -30px;
+        color:rgb(0,131,116);
+    }
+    .para{
+        color:rgb(17, 16, 16);
+        text-align: center;
+    }
+    .tick{
+        color: rgb(0,131,116);
+    }
+    .smiley{
+         size: 40px;
+         font-size: 40px;
+    }
+    .op{
+        opacity: 0.5;
+    }
+    .app1{
+      transform: scale(1);
+      transition: 0.1s ease-in-out;
+    }
+    .app1:hover{
+      transform: scale(1.1);
+
+    }
+    .cityimg{
+       background-image: url("https://connectingnature.eu/sites/default/files/styles/large/public/webinar%231%20%28002%29%20web.jpg?itok=oz--t9n4");
+       background-attachment: fixed;
+       background-size: cover;
+       background-repeat: no-repeat;
+       color: aliceblue;
+       height: 90vh;
+       border-radius: 20px;
+    }
+    .callbut{
+      background-color: transparent;
+      border: thin solid aliceblue;
+      color: aliceblue;
+      padding: 10px;
+   }
+  .callbut:hover{
+     background-color: rgb(0,118,104);
+     border: none;
+    }
+    .testimonialspic{
+        border-radius: 200px;
+        width: 80px;
+        height: 80px;
+        margin-top: +10px;
+        margin-left: 10px;
+    }
+    .star{
+       text-align: left;
+       margin-top: -10px;
+       color:yellow;
+       font-size: 20px;
+    }
+    .product{
+        text-align: center;
+    }
+    .teampic{
+      text-align: center;
+      margin-left: 40px;
+      margin-top: +10px;
+    }
+    
+    .box5{
+      width: 300px;
+      height: 550px;
+      border-radius: 10px;
+      margin-left: 30px;
+      padding: 30px;
+    }
+    .box6{
+      width: 300px;
+      height: 650px;
+      margin-left: 20px;
+      margin-top: -40px;
+      border-radius: 10px;
+      border: 5px solid rgb(0,131,116);
+    }
+    .pricingemo{
+      padding: 10px 15px;
+      border-radius: 60px;
+      text-align: center;
+      font-size: 30px;
+      background-color: rgb(0,131,116);
+    }
+    .buynow1{
+      border-color: white;
+      border-radius: 200px;
+      width: 150px;
+      height: 50px;
+     margin-left: 20px;
+    }
+    .buynow1:hover{
+      background-color: rgb(0,131,116);
+    }
+    .buynow2{
+      border-color: white;
+      border-radius: 200px;
+      width: 150px;
+      height: 50px;
+     margin-left: 70px;
+    }       
+    .buynow2:hover{
+      background-color: rgb(0,131,116);
+    }
+    .maria{
+    border-radius: 400px;
+    width: 50px;
+    height: 50px;
+    margin-top: +7px;
+   }
+   .allisa{
+    border-radius: 400px;
+    width: 50px;
+    height: 50px;
+    margin-top: +5px;
+   }
+   .mark{
+    border-radius: 400px;
+    width: 50px;
+    height: 50px;
+    margin-top: +5px;
+   }
+   .box1{
+    width: 350px;
+    height: 430px;
+    padding: 10px;
+    background-color: rgb(0,131,116);
+    margin-left: -20px;
+   }
+   .boxes{
+    width: 300px;
+    height: 90px;
+    margin-left: 15px;
+    margin-top: 10px;
+    background-color: rgb(26, 144, 130);
+   }
+   .ico{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #008372;
+    border-radius: 50px;
+   }
+   .ico:hover{
+    color: rgb(0,131,116);
+    background-color: white;
+   }
+   .address{
+    margin-left: 70px;
+    margin-top: -40px;
+   }
+   .email{
+    margin-top: -20px;
+   }
+   .ico3{
+    color: white;
+    font-size: 30px;
+    margin-left: 1300px;
+    background-color: #008372;
+    border-radius: 35px;
+   }
+   .butss{
+    border-radius: 300px;
+    padding: 10px;
+    background-color: rgb(0,131,116);
+    /* margin-left: 300px; */
+    margin-top: +30px;
+   }
+   .butss:hover{
+    opacity: 0.7;
+   }
+   
+   .ico3{
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #008372;
+    border-radius: 50px;
+    margin-left: 1300px;
+    position:sticky;
+   }
+   .impact{
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color:lightseagreen;
+    border-radius: 80px;
+    opacity: 0.5;
+   }
+   .impact:hover{
+    background-color: lightsteelblue;
+   }
+   .impact1{
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color:lightgray;
+    border-radius: 80px;
+    opacity: 0.5;
+   }
+   .impact1:hover{
+    background-color: rgb(0,131,116);
+   }
+   
+   
+  
+  
+</style>
+</head>
+<body>
+    <section>
+        <div class="container-fluid" style="background-color: rgb(2,59,109);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                  <img class="bootsicon" src="https://bootstrapmade.com/assets/img/logo.png">                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+      <div class="container-fluid" style="background-color: rgb(0,118,104);">
+         <div class="container">
+             <div class="row">
+                 <div class="col-12 col-sm-6 text-center text-sm-start">
+                 <i class="bi bi-envelope" style="color: white;">&nbsp;contact@gmail.com</i>&nbsp;&nbsp;
+                 <i class="bi bi-phone" style="color: white;">&nbsp;+1 5589 55488 55</i>&nbsp;&nbsp;
+                 </div>
+                 <div class="col-sm-6 text-end d-none d-sm-block opacity-75">
+                     <i class="bi bi-twitter-x" style="color: white;"></i>&nbsp;&nbsp;
+                     <i class="bi bi-facebook" style="color: white;"></i>&nbsp;&nbsp;
+                     <i class="bi bi-instagram" style="color: white;"></i>&nbsp;&nbsp;
+                     <i class="bi bi-linkedin" style="color: white;"></i>&nbsp;&nbsp;   
+                 </div>
+             </div>
+         </div>
+      </div>   
+     </section>
+
+
+<section>
+    <div class="container-fluid" style="background-color: rgb(0,131,116);">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12 order-1 order-2">
+                <h5><b style="font-size: 40px; color: white;">Impact</b></h5>
+            </div>
+            <div class="col-md-6 col-12 order-md-2 order-1">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="Home"><b>Home</b></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active text-light" href="About"><b>About</b></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active text-light" href="Services"><b>Services</b></a>
+                            <li class="nav-item">
+                        </li>
+                            <a class="nav-link active text-light" href="Portfolio"><b>Portfolio</b></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active text-light" href="Team"><b>Team</b></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active text-light" href="Block"><b>Block</b></a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-light" href="Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <b>Dropdown</b>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Dropdown1</a></li>
+                              <li><a class="dropdown-item" href="#">Deep Dropdown</a></li>
+                              <li><a class="dropdown-item" href="#">Dropdown2</a></li>
+                              <li><a class="dropdown-item" href="#">Dropdown3</a></li>
+    
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active text-light" href="Contact"><b>Contact</b></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+              </nav><br><br>
+            </div>
+        </div>
+      </div>  
+    </div>
+    </section>
+    <section>
+      <div class="container-fluid" style="background-color: rgb(0,131,116);">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-6 col-12 order-md-1 order-2 align-self-center" style="color: white;">
+          <h1>Welcome to Impact</h1>
+          <p style="font-size: medium;">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <button type="button" class="btn-btn-success">Get-Started</button>&nbsp;&nbsp;
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle op" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+          </svg>&nbsp;<b> Watch Video</b><br><br>
+      </div>
+      <div class="col-md-6 col-12 order-md-2 order-1">
+      <img class="img-fluid" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/hero-img.svg">
+      </div>
+      </div>
+      </div>
+      </section>
+
+<div class="container-fluid css">
+  <div class="container">
+    <div class="row" style="color: white;">
+      <div class="col-3 box shadow">
+        <i class="bi bi-easel" style="font-size: 60px;"></i>
+        Lorem Ipsum
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+      <div class="col-3 box shadow">
+        <i class="bi bi-gem" style="font-size: 60px;"></i>
+        Sed Ut <br>Perspiciatis
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="col-3 box shadow">
+        <i class="bi bi-geo-alt" style="font-size: 60px;"></i>
+        Magin Dolores
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="col-3 box shadow">
+        <i class="bi bi-command" style="font-size: 60px;"></i>
+        Neo Enim
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br><br><br>
+    </div>
+  </div>
+</div><br><br>
+       
+    <section>
+        <div class="heading">
+            <b>About Us</b>
+        </div>
+        <div class="dash">
+            <i class="bi bi-dash-lg"></i>
+        </div>
+        <div class="para">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit<br><br>
+        </div>
+    </section><br><br>
+
+    <div class="container-fluid" style="background-color: white;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-12" style="color:rgb(17, 16, 16); font-size: 30px;">
+              <b>Voluptatem dignissimos provident <br>
+                laboris nisi ut aliquip ex ea <br>
+                commodo</b><br><br>
+                <img class="img-fluid" style="border-radius: 20px;" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/about.jpg">
+                <br><br>
+                <p style="font-size:medium;">Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et.
+                  Placeat debitis quia recusandae odit et consequatur voluptatem.
+                   Dignissimos pariatur consectetur fugiat voluptas ea.</p>
+                   <p style="font-size: medium;">Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p><br><br>
+            </div>
+            <div class="col-md-6 col-12" style="color: rgb(14, 8, 8); background-color: white;">
+              <p style="color: grey;">Lorem ipsum dolar sit amet,consectetur adipiscing elit,sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua </p>
+              <i class="bi bi-check-circle-fill tick">&nbsp;&nbsp;&nbsp;<p style="color: black; margin-top: -22px; margin-left: 20px;">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></i>
+              <i class="bi bi-check-circle-fill tick">&nbsp;&nbsp;&nbsp;<p style="color: black; margin-top: -22px; margin-left: 20px;"> Duis aute irure dolor in reprehenderit in voluptate velit.</p></i>
+  
+              <i class="bi bi-check-circle-fill tick">&nbsp;&nbsp;&nbsp;<p style="color: black; margin-top: -22px; margin-left: 20px;" >laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p></i><br>
+              <p style="color: black;" >laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                 irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident </p><br>
+                  <img class="img-fluid" style="border-radius: 20px;" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/about-2.jpg"><br><br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div><br><br><br>
+
+      <section>
+        <div class= "container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+              <marquee behavior="scroll" scrollamount="10" direction="left">
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/clients/client-2.png" width="100" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/clients/client-3.png" width="100" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/clients/client-4.png" width="100" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/clients/client-5.png" width="100" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/clients/client-6.png" width="100" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/clients/client-7.png" width="100" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/clients/client-8.png" width="100" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/clients/client-1.png" width="100" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </marquee>
+            </div>
+            </div>
+          </div>
+    </section><br><br><br><br><br>  
+
+
+    <section>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-12" style="width: 500px;">
+                <img class="img-fluid" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/stats-img.svg">
+              </div>
+             <div class="col-md-3 col-12">
+                <i class="bi bi-emoji-smile smiley" style="color:  rgb(0,131,116);">&nbsp;
+                  <b style="color: black;">232</b></i>
+                <p class="op" style="font-size: medium; color: black;">
+                <b>Happy Clients</b> consequntur quae</p> <br>
+                <i class="bi bi-headset smiley"style="color:  rgb(0,131,116);" >&nbsp;
+                <b style="color: black;">1453</b></i>
+                <p class="op" style="font-size: medium; color: black;">
+                <b>Hours of Support</b> aut commodi quaerat</p>
+            </div>
+            <div class="col-md-3 col-12">
+            <i class="bi bi-journal-album smiley" style="color:  rgb(0,131,116);" >&nbsp;
+              <b style="color: black;">521</b></i>
+              <p class="op" style="font-size: medium; color: black;">
+                 <b>Projects </b>adipisci atque cum<br> quia aut</p>
+              <i class="bi bi-people smiley" style="color:  rgb(0,131,116);">&nbsp;
+                <b style="color: black;">32</b></i>
+              <p class="op" style="font-size: medium; color: black;"> 
+                <b>Hard workers</b> rerum asperiores dolor</p>
+            </div>
+          </div>
+        </div>
+      </section><br><br><br><br>
+
+      <div class="container">
+        <div class="row cityimg">
+          <div class="col-md-12 col-md-6" style="text-align: center; margin-top: 100px;">
+            <a href="https://youtu.be/LXb3EKWsInQ" class="bi bi-play-circle-fill" style="width: 50; height: 50; font-size: 30px; color: #008372;"></a><br>
+            <b style="font-size: 40px;">Call To Action</b><br><br>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+            <button type="button" class="callbut">Call To Action</button>
+          </div>
+        </div>
+      </div><br><br><br><br>
+      <section>
+        <div class="heading">
+            <b>Our Services</b>
+        </div>
+        <div class="dash">
+            <i class="bi bi-dash-lg"></i>
+        </div>
+        <div class="para">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit<br><br>
+        </div>
+    </section><br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-md-6">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <i style="font-size: 60px; text-align: center;" class="bi bi-activity"></i>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Nesciunt Mete</h5> 
+                  <p class="card-text" style="font-size: 18px;">Provident nihil minus consectetur non
+                  omnis maiores. Eos accusantium minus
+                dolores iure perferendistempore et
+              consectetur.
+            </p>
+            <p style="color: grey; font-size: 15px;" >Read more-></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <i style="font-size: 60px; text-align: center;" class="bi bi-broadcast"></i>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Eosle Commodi</h5>
+                  <p class="card-text" style="font-size: 18px;">Ut autem aut autem non a Sint sit
+                  facilis nam iusto sint. Libero corrupti neque
+                eum hic ut nesciunt dolorem.
+              </p>
+              <p style="color: grey; font-size: 15px;">Read more-></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <i style="font-size: 60px; text-align: center;" class="bi bi-easel"></i>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Ledo Markt</h5>
+                  <p class="card-text" style="font-size: 18px;">Ut excepturi voluptatem nisi sed. Quidem
+                  fuga consequatur.Minu ea aut. Vel qui id
+                voluptas adipisci eos earum corrupti.
+              </p>
+              <p style="color: grey; font-size: 15px;">Read more-></p>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <i style="font-size: 60px; text-align: center;" class="bi bi-bounding-box-circles"></i>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Asperiores Commodit</h5>
+                  <p class="card-text" style="font-size: 18px;">Non et temporibus minus sed dolor
+                  esse consequatur.Cupiditate sed error ea
+                fuga sit provident adipisci neque.
+              </p>
+              <p style="color: grey; font-size: 15px;">Read more-></p>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <i style="font-size: 60px; text-align: center;" class="bi bi-calendar4-week"></i>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Velit Doloremque</h5>
+                  <p class="card-text" style="font-size: 18px;">Cumque et suscipit saepe. Est maiores
+                  autem enim facilis ut aut ipsam corporis
+                aut. Sed animi at autem alias eius labore.
+              </p>
+              <p style="color: grey; font-size: 15px;">Read more-></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <i style="font-size: 60px; text-align: center;" class="bi bi-chat-square-text"></i>
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Dolori Architecto</h5>
+                  <p class="card-text" style="font-size: 18px;">Hic molestias ea quibusdam eos. Fugiat
+                  enim doloremque aut neque non et debitis
+                iure. corrupti recusandae ducimus enim.
+              </p>
+              <p class="op">Read more-></p>
+                </div>
+        </div>
+      </div>
+    </div><br><br><br><br>
+      
+
+      <section>
+        <div class="heading">
+            <b>Testimonials</b>
+        </div>
+        <div class="dash">
+            <i class="bi bi-dash-lg"></i>
+        </div>
+        <div class="para">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit<br><br>
+        </div>
+    </section><br><br>
+    
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-md-6">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="testimonialspic" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/testimonials/testimonials-2.jpg">
+                        <div class="card-body">
+                          <h5 style="text-align: left;"  class="card-title">Sara Wilson</h5>
+                          <p class="op" style="font-size: medium; text-align: left;">Designer</p>
+                          <div class="star">
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i><br><br>
+                            <i style="font-size: 18px; color: black;" class="bi bi-quote">&nbsp;
+                                 Export tempor illum tamen malis mailis eram quae irure esse labore
+                                  quem cilium quid cillium eram malis quorum velit fore eram velit sunt 
+                                  aliqua noster fugiat irure amet legam anim culpa.&nbsp;</i>
+                                  <i style="font-size: 18px; color: black" class="bi bi-quote"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="testimonialspic" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/testimonials/testimonials-3.jpg">
+                        <div class="card-body">
+                          <h5 style="text-align: left;" class="card-title">Jena Karlis</h5>
+                          <p class="op" style="font-size: medium; text-align: left;">store Owner</p>
+                          <div class="star">
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i><br><br>
+                            <i style="font-size: 18px; color: black;" class="bi bi-quote">&nbsp;
+                                 Enim nisi export duis labore ciliumvquae magna enim sint quorum nulla 
+                                 quem veniam duis minim tempor labore quem duis nosterbaute amet eram
+                                  fore quis sint minim.</i>&nbsp;
+                            <i style="font-size: 18px; color: black;" class="bi bi-quote"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="testimonialspic" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/testimonials/testimonials-4.jpg">
+                        <div class="card-body">
+                          <h5 style="text-align: left;" class="card-title">Matt Brandon</h5>
+                          <p class="op" style="font-size: medium; text-align: left;">Freelancer</p>
+                          <div class="star">
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i>
+                            <i class="bi bi-star-fill col"></i><br><br>
+                            <i style="font-size: 18px; color: black;" class="bi bi-quote">&nbsp;
+                                 Fugiat enim eram quae cilium dolore amet nulla multos export minim
+                                  velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
+                                   quem dolore labore illum veniam.</i>
+                           <i style="font-size: 18px; color: black;" class="bi bi-quote"></i>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+    </div>
+</div>
+</section><br><br><br><br>
+
+<section>
+    <div class="heading">
+        <b>Portfolio</b>
+    </div>
+    <div class="dash">
+        <i class="bi bi-dash-lg"></i>
+    </div>
+    <div class="para">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit<br><br>
+    </div>
+</section><br><br>
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-md-6">
+            <div class="product">
+                <b style="color: black; font-size: 15px;">All</b>&nbsp;&nbsp;&nbsp;
+                <b style="color: black; font-size: 15px;">App</b>&nbsp;&nbsp;&nbsp;
+                <b style="color: black; font-size: 15px;">Product</b>&nbsp;&nbsp;
+                <b style="color: black; font-size: 15px;">Branding</b>&nbsp;&nbsp;
+                <b style="color: black; font-size: 15px;">Books</b>
+              </div><br>   
+        </div>
+    </div>
+</div>
+</section><br><br>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-6">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/app-1.jpg">
+                        <div class="card-body">
+                          <h5 class="card-title">App 1</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/product-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product 1</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/branding-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Branding 1</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/books-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Books 1</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/app-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">App 2</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/product-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product 2</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/branding-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Branding 2</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/books-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Books 2</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/app-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">App 3</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/product-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product 3</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img  class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/branding-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Branding 3</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/books-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Books 3</h5>
+                          <p class="op">Lorem ipsum, dolor sit amet consecteturs</p>
+                        </div>
+                      </div>
+                    </div>            
+            </div>
+        </div>
+</section><br><br><br><br>
+
+<section>
+    <div class="heading">
+        <b>Our Team</b>
+    </div>
+    <div class="dash">
+        <i class="bi bi-dash-lg"></i>
+    </div>
+    <div class="para">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit<br><br>
+    </div>
+</section><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-md-6">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+        <div class="card h-100">
+          <img class="teampic" src="//bootstrapmade.com/demo/templates/Impact/assets/img/team/team-1.jpg" width="250px" height="300px" style="border-radius: 60px;">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Walter White</h5>
+            <p class="card-text op" style="font-size: medium; text-align: center;">Web Development</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-twitter-x impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-facebook impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-instagram impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-linkedin impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+        </div>
+      <div class="col">
+        <div class="card h-100">
+          <img class="teampic" src="//bootstrapmade.com/demo/templates/Impact/assets/img/team/team-2.jpg" width="250px" height="300px" style="border-radius:60px ;">
+          <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Sarah Jhinson</h5>
+          <p class="card-text op" style="font-size: medium; text-align: center;">Marketing</p>&nbsp;&nbsp;&nbsp;&nbsp;
+          <i class="bi bi-twitter-x impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-facebook impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-instagram impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-linkedin impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+  </div>
+  <div class="card h-100">
+      <div class="col">
+      <img class="teampic" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/team/team-3.jpg" width="250px" height="300px" style="border-radius: 60px;">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">William Anderson</h5>
+          <p class="card-text op" style="font-size: medium; text-align: center;">Content</p>&nbsp;&nbsp;&nbsp;
+          <i class="bi bi-twitter-x impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-facebook impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-instagram impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-linkedin impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div><br><br><br><br>
+
+
+<section>
+    <div class="heading">
+        <b>Pricing</b>
+    </div>
+    <div class="dash">
+        <i class="bi bi-dash-lg"></i>
+    </div>
+    <div class="para">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit<br><br>
+    </div>
+</section><br><br><br><br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-md-6">
+      <div class="card-group">
+        <div class="box5 shadow">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;"> Free Plan </h5><br>
+            <i style="color: white;margin-left: 80px;" class="bi bi-box pricingemo"> </i>
+            <p style="font-size: 40px; color: rgb(0,131,116); text-align: center;"><b>$</b><b style="font-size: 30px; color: rgb(0,131,116);">0</b><b style="opacity: 0.5; color: silver; font-size: medium;">/month</b></p>
+           
+            <i class="bi bi-check-lg">&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;">Quam adipiscing vitae proin</b></i><br><br>
+            <i class="bi bi-check-lg">&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;">Nec feugiat nisl pretium</b></i><br><br>
+            <i class="bi bi-check-lg">&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;">Nulla at volutpat diam uteera</b></i><br><br>
+            <i class="bi bi-x">&nbsp;&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;" class="op"><strike>Pharetra massa massa ultricies</strike></b></i><br>
+            <i class="bi bi-x">&nbsp;&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;" class="op"><strike>Massa ultricies mi quis hendrerit</strike></b></i><br><br>
+            <button style="font-size: 20px; color: silver;" class="buynow1"><b>Buy Now</b></button>
+          </div>
+        </div> <br><br>
+
+        <div class="box6 shadow">
+          <div class="card-body">
+          <h5 class="card-title" style="text-align: center; margin-top: 50px;">Business Plan</h5><br>
+          <i style="color: white; margin-left: 120px;" class="bi bi-rocket pricingemo"> </i><br><br>
+          <p style="font-size: 40px; color: rgb(0,131,116); text-align: center;"><b>$</b><b style="font-size: 30px; color: rgb(0,131,116);">29</b><b style="opacity: 0.5; color: silver; font-size: medium;">/month</b></p><br>
+         
+          <i class="bi bi-check-lg" style="margin-left: 20px;">&nbsp;&nbsp;<b style="font-size: 15px; text-align: center;">Quam adipiscing vitae proin</b></i><br><br>
+          <i class="bi bi-check-lg" style="margin-left: 20px;">&nbsp;&nbsp;<b style="font-size: 15px; text-align: center;">Nec feugiat nisl pretium</b></i><br><br>
+          <i class="bi bi-check-lg" style="margin-left: 20px;">&nbsp;&nbsp;<b style="font-size: 15px; text-align: center;">Nulla at volutpat diam uteera</b></i><br><br>
+          <i class="bi bi-check-lg" style="margin-left: 20px;">&nbsp;&nbsp;<b style="font-size: 15px; text-align: center;">Pharetra massa massa ultricies</b></i><br><br>
+          <i class="bi bi-check-lg" style="margin-left: 20px;">&nbsp;&nbsp;<b style="font-size: 15px; text-align: center;">Massa ultricies mi quis hendrerit</b></i><br><br><br>
+          <button style="font-size: 25px; color: silver;" class="buynow2"><b>Buy Now</b></button>
+          </div>
+        </div><br>
+        <div class="box5 shadow">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Developer Plan</h5><br>
+            <i style="color: white; margin-left: 80px;" class="bi bi-send pricingemo"> </i>
+            <p style="font-size: 40px; color: rgb(0,131,116); text-align: center;"><b>$</b><b style="font-size: 30px; color: rgb(0,131,116);">0</b><b style="opacity: 0.5; color: silver; font-size: medium;">/month</b></p>
+           
+            <i class="bi bi-check-lg">&nbsp;&nbsp;<b style="font-size: 15px; text-align: center;">Quam adipiscing vitae proin</b></i><br><br>
+            <i class="bi bi-check-lg">&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;">Nec feugiat nisl pretium</b></i><br><br>
+            <i class="bi bi-check-lg">&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;">Nulla at volutpat diam uteera</b></i><br><br>
+              <i class="bi bi-check-lg">&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;">Pharetra massa massa ultricies</b></i><br><br>
+                <i class="bi bi-check-lg">&nbsp;&nbsp;<b style="font-size: 15px;text-align: center;">Massa ultricies mi quis hendrerit</b></i><br><br>
+            <button style="font-size: 20px; color: silver;" class="buynow1"><b>Buy Now</b></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div><br><br><br><br><br>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <p style="color: black; font-size: 30px;">Frequently<br>Asked<br><b style="color: black;">Questions</b></p>
+        <p style="color: grey;">Loremipsum dolor sit amet,<br>consectetur adipiscing elit,sed do<br>eiusmod tempor inciddunt ut labore et<br>dolore magna aliqua. Duis aute irure dolor in reprehendent</p>
+      </div>
+      <div class="col-md-8 col-12">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               <b style="color: rgb(0,131,116);">1.</b>&nbsp;<b style="color: black;">Non consectetur a erat nam at lectus urna duis?</b>        </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <b style="color: rgb(0,131,116);">2.</b>&nbsp;<b style="color: black;">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</b>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+             Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b style="color: rgb(0,131,116);">3.</b>&nbsp;<b style="color: black;"> Dolor sit amet consectetur adipiscing elit pellentesque?</b>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b style="color: rgb(0,131,116);">4.</b>&nbsp;<b style="color: black;"> Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</b>
+                
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b style="color: rgb(0,131,116);">5.</b>&nbsp;<b style="color: black;"> Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</b>
+                
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><br><br><br><br>
+
+      <section>
+        <div class="heading">
+            <b>Recent Blog Posts</b>
+        </div>
+        <div class="dash">
+            <i class="bi bi-dash-lg"></i>
+        </div>
+        <div class="para">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit<br><br>
+        </div>
+    </section><br><br><br><br>  
+  
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-md-6">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-1.jpg">
+              <div class="card-body">
+                <h6 style="text-align: start; color: grey;" class="card-title">Politics</h5>
+                  <h1 style="color: black; text-align: start; font-size: 20px;">Dolorum optio tempore<br> voluptas dignissimos</h1><br>
+                 <img class="maria" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-author.jpg"> 
+                 <p style="color: black; margin-right: 90px; margin-top: -50px; margin-left: 70px;"><b>Maria Doe</b></p><br><p class="date" style="color: grey; margin-right: 90px; margin-top: -40px; margin-left: 70px;">Jan 1, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-2.jpg">
+              <div class="card-body">
+                <h6 style="color: grey; text-align: start;" class="card-title">Sports</h5>
+                  <h1 style="color: black; text-align: start; font-size: 20px;">Nisi magni odit<br>consequatur autem nulla<br>dolorem</h1><br>
+                 <img class="allisa" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-author-2.jpg">
+                 <p style="color: black; margin-right: 90px; margin-top: -50px; margin-left: 70px;"><b>Allisa Mayer</b></p><br><p style="color: grey; margin-right: 90px; margin-top: -40px; margin-left: 70px;">Jun 5, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-3.jpg">
+              <div class="card-body">
+                <h6 style="color: grey; text-align: start;" class="card-title">Entertainment</h5>
+                  <h1 style="color: black; text-align: start; font-size: 20px;">Possimus soulta ut id<br>suscipit ea ut in quo quia et<br>soulta</h1><br>
+                 <img class="mark" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-author-3.jpg">
+                <p style="color: black; margin-right: 90px; margin-top: -50px; margin-left: 70px;"><b>Mark Dower</b></p><br><p style="color: grey; margin-right: 90px; margin-top: -40px; margin-left: 70px;">Jun 22, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+  </div><br><br><br><br>
+
+  <section>
+    <div class="heading">
+        <b>Contact</b>
+    </div>
+    <div class="dash">
+        <i class="bi bi-dash-lg"></i>
+    </div>
+    <div class="para">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit<br><br>
+    </div>
+</section><br><br><br><br>  
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <div class="box1 shadow">
+          <div class="boxes"> <br>
+           <i class="bi bi-geo-alt ico"></i>&nbsp;&nbsp;&nbsp; <p class="address" style="font-size: 20px; color: white;"><b>Address</b></p>
+           <p class="email" style="font-size: 13px; color: white; margin-left: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A108 Adam Street,New York,NY<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;535022</p>
+          </div>
+          <div class="boxes"> <br>
+          <i class="bi bi-telephone ico"></i>&nbsp;&nbsp;&nbsp; <p class="address" style="font-size: 20px; color: white;"><b>Call Us</b></p>
+          <p class="email" style="font-size: 13px; color: white; margin-left: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 5589 55488 55</p>
+          </div>
+          <div class="boxes"> <br>
+         <i class="bi bi-envelope ico"></i>&nbsp;&nbsp;&nbsp; <p class="address" style="font-size: 20px; color: white;"><b>Email Us</b></p>
+         <p class="email" style="font-size: 13px; color: white; margin-left: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@example.com</p>
+          </div>
+          <div class="boxes"> <br>
+            <i class="bi bi-clock ico"></i>&nbsp;&nbsp;&nbsp; <p class="address" style="font-size: 20px; color: white;"><b>Open Hours:</b></p>
+            <p class="email" style="font-size: 13px; color: white; margin-left: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mon-Sat: 11AM - 23PM</p>
+          </div>
+        </div> <br><br>
+      </div>
+      <div class="col-md-8 col-12" id="from2">
+        <form action="forms/contact.php" method="post">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Your Email" required="">
+            </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control" placeholder="Subject" required="">
+            </div>
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea>
+            </div>
+            <div class="col-md-12 text-center" id="from1">
+              <button class="butss" type="submit" style="color: white;">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
+
+
+ <section>
+  <div class="container-fluid" style="background-color: rgb(0,131,116)"> <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-12" style="color: white;">
+          <h2>Impact</h2> <br>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p><br><br>
+          <i class="bi bi-twitter-x impact" style="color: white;"></i>&nbsp;&nbsp;
+          <i class="bi bi-facebook impact" style="color: white;"></i>&nbsp;&nbsp;
+          <i class="bi bi-instagram impact" style="color: white;"></i>&nbsp;&nbsp;
+          <i class="bi bi-linkedin impact" style="color: white;"></i>&nbsp;&nbsp;
+        </div>
+        <div class="col-md-2 col-12" style="color: white;">
+          <b>Useful Links</b><br><br>
+          <p class="op">Home</p>
+          <p class="op">About Us</p>
+          <p class="op">Services</p>
+          <p class="op">Terms Of Service</p>
+          <p class="op">Privacy Policy</p>
+        </div>
+        <div class="col-md-2 col-12" style="color: white;">
+          <b>Our Services</b><br><br>
+          <p class="op">Web Design</p>
+          <p class="op">Web Development</p>
+          <p class="op">Product Management</p>
+          <p class="op">Marketing</p>
+          <p class="op">Graphic Design</p>
+        </div> 
+         <div class="col-md-3 col-12" style="color: white;">
+          <b style="color: white;">Contact Us</b> <br><br>
+          <p style="color: white;">A108 Adam Street</p>
+          <p style="color: white;">New York, NY 535022</p>
+          <p style="color: white;">United States</p>
+          <p style="color: white;">Phone: +1 5589 55488 55</p>
+          <p style="color: white;">Email: info@example.com</p><br><br><br><br>
+        </div>
+        <hr style="color: white;"> <br>
+
+        <p style="color: white; font-size: 12px; text-align: center;">© Copyright Impact All Rights Reserved <br>Designed by BootstrapMade</p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
