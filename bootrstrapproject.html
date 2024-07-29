@@ -80,7 +80,7 @@
     }
     .app1{
       transform: scale(1);
-      transition: 0.1s ease-in-out;
+      transition: 0.2s ease-in;
     }
     .app1:hover{
       transform: scale(1.1);
@@ -105,12 +105,55 @@
      background-color: rgb(0,118,104);
      border: none;
     }
+    .left{
+      margin-left: 30px;
+    }
+    .commodi{
+      margin-left: 40px;
+    }
+    .green{
+      font-size: 50px;
+      color: transparent;
+      margin-left: -40px;
+      margin-top: -50px;
+      opacity: 0.5;
+    }
+    .green:hover{
+      color: rgb(0,131,116);
+      background-color: transparent;
+    }
+    .three::after{
+      content: "";
+      display: block;
+      bottom: -10px;
+      width: 150px;
+      height: 5px;
+      margin-left: 10px;
+      background-color: silver;
+      position: relative;
+      opacity: 0.5;
+      margin-left: -7px;
+        }
+    .four::after{
+     content: "";
+     display: block;
+     bottom: -10px;
+     width: 200px;
+     height: 5px;
+     margin-left: 10px;
+     background-color: silver;
+     position: relative;
+     opacity: 0.5;
+    }
     .testimonialspic{
         border-radius: 200px;
         width: 80px;
         height: 80px;
         margin-top: +10px;
         margin-left: 10px;
+    }
+    .blue{
+      color: skyblue;
     }
     .star{
        text-align: left;
@@ -188,8 +231,8 @@
     margin-top: +5px;
    }
    .box1{
-    width: 350px;
-    height: 430px;
+    width: 360px;
+    height: 460px;
     padding: 10px;
     background-color: rgb(0,131,116);
     margin-left: -20px;
@@ -198,7 +241,7 @@
     width: 300px;
     height: 90px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
     background-color: rgb(26, 144, 130);
    }
    .ico{
@@ -237,6 +280,9 @@
    .butss:hover{
     opacity: 0.7;
    }
+   .cat:hover{
+    color: rgb(0,131,116);
+   }
    
    .ico3{
     color: white;
@@ -248,24 +294,36 @@
     position:sticky;
    }
    .impact{
-    font-size: 20px;
+    /* font-size: 20px;
     padding: 5px 10px;
     background-color:lightseagreen;
     border-radius: 80px;
-    opacity: 0.5;
+    opacity: 0.5; */
+    border-radius: 30px;
+    margin-left: 20px;
+    color: silver;
+    font-size: 20px;
+    border: 2px solid;
+    padding: 5px 10px;
    }
    .impact:hover{
-    background-color: lightsteelblue;
+    /* background-color: lightsteelblue; */
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(0,131,116);
    }
    .impact1{
+    border-radius: 30px;
+    margin-left: 20px;
+    color: silver;
     font-size: 20px;
+    border: 2px solid;
     padding: 5px 10px;
-    background-color:lightgray;
-    border-radius: 80px;
-    opacity: 0.5;
    }
    .impact1:hover{
-    background-color: rgb(0,131,116);
+    border-radius: 30px;
+    color: rgb(0,131,116);
+    background-color: white;
    }
    
    
@@ -368,7 +426,7 @@
       <div class="row">
       <div class="col-md-6 col-12 order-md-1 order-2 align-self-center" style="color: white;">
           <h1>Welcome to Impact</h1>
-          <p style="font-size: medium;">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <p style="font-size: medium;" class="op">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <button type="button" class="btn-btn-success">Get-Started</button>&nbsp;&nbsp;
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle op" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
@@ -403,7 +461,8 @@
       </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br><br><br>
     </div>
   </div>
-</div><br><br>
+</div><br><br><br>
+
        
     <section>
         <div class="heading">
@@ -504,7 +563,8 @@
       <div class="container">
         <div class="row cityimg">
           <div class="col-md-12 col-md-6" style="text-align: center; margin-top: 100px;">
-            <a href="https://youtu.be/LXb3EKWsInQ" class="bi bi-play-circle-fill" style="width: 50; height: 50; font-size: 30px; color: #008372;"></a><br>
+            <a href="https://youtu.be/LXb3EKWsInQ" class="bi bi-play-circle-fill" style="width: 5
+            0; height: 50; font-size: 30px; color: #008372;"></a><br>
             <b style="font-size: 40px;">Call To Action</b><br><br>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
             <button type="button" class="callbut">Call To Action</button>
@@ -528,83 +588,83 @@
         <div class="col-md-12 col-md-6">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-              <div class="card h-100">
-                <i style="font-size: 60px; text-align: center;" class="bi bi-activity"></i>
+              <div class="card h-100 shadow" style="border-color: white;">
+                <i style="font-size: 60px; "class="bi bi-activity left"><i class="bi bi-circle-fill green"></i></i>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align: center;">Nesciunt Mete</h5> 
-                  <p class="card-text" style="font-size: 18px;">Provident nihil minus consectetur non
-                  omnis maiores. Eos accusantium minus
-                dolores iure perferendistempore et
+                  <h5 class="card-title three"><b>Nesciunt Mete</b></h5><br> 
+                  <p class="card-text" style="font-size: 16px;">Provident nihil minus consectetur non<br>
+                  omnis maiores. Eos accusantium minus<br>
+                dolores iure perferendistempore et<br>
               consectetur.
             </p>
-            <p style="color: grey; font-size: 15px;" >Read more-></p>
+            <p class="op" style="font-size: 17px;" >Read more-></p>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <i style="font-size: 60px; text-align: center;" class="bi bi-broadcast"></i>
+              <div class="card h-100 shadow" style="border-color: white;">
+                <i style="font-size: 60px;" class="bi bi-broadcast commodi"><i class="bi bi-circle-fill green"></i></i>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align: center;">Eosle Commodi</h5>
-                  <p class="card-text" style="font-size: 18px;">Ut autem aut autem non a Sint sit
-                  facilis nam iusto sint. Libero corrupti neque
+                  <h5 class="card-title four"><b style="margin-left: 20px;">Eosle Commodi</b></h5><br>
+                  <p class="card-text" style="font-size: 16px;">Ut autem aut autem non a Sint sit<br>
+                  facilis nam iusto sint. Libero corrupti neque<br>
                 eum hic ut nesciunt dolorem.
               </p>
-              <p style="color: grey; font-size: 15px;">Read more-></p>
+              <p class="op" style="font-size: 17px;">Read more-></p>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <i style="font-size: 60px; text-align: center;" class="bi bi-easel"></i>
+              <div class="card h-100 shadow" style="border-color: white;">
+                <i style="font-size: 60px;" class="bi bi-easel commodi"><i class="bi bi-circle-fill green"></i></i>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align: center;">Ledo Markt</h5>
-                  <p class="card-text" style="font-size: 18px;">Ut excepturi voluptatem nisi sed. Quidem
-                  fuga consequatur.Minu ea aut. Vel qui id
+                  <h5 class="card-title four"><b style="margin-left: 20px;">Ledo Markt</b></h5><br>
+                  <p class="card-text" style="font-size: 16px;">Ut excepturi voluptatem nisi sed. Quidem<br>
+                  fuga consequatur.Minu ea aut. Vel qui id<br>
                 voluptas adipisci eos earum corrupti.
               </p>
-              <p style="color: grey; font-size: 15px;">Read more-></p>
+              <p  class="op" style="font-size: 17px;">Read more-></p>
   
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <i style="font-size: 60px; text-align: center;" class="bi bi-bounding-box-circles"></i>
+              <div class="card h-100 shadow" style="border-color: white;">
+                <i style="font-size: 60px;" class="bi bi-bounding-box-circles commodi"><i class="bi bi-circle-fill green"></i></i>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align: center;">Asperiores Commodit</h5>
-                  <p class="card-text" style="font-size: 18px;">Non et temporibus minus sed dolor
-                  esse consequatur.Cupiditate sed error ea
+                  <h5 class="card-title four"><b style="margin-left: 12px;">Asperiores Commodit</b></h5><br>
+                  <p class="card-text" style="font-size: 16px;">Non et temporibus minus sed dolor<br>
+                  esse consequatur.Cupiditate sed error ea<br>
                 fuga sit provident adipisci neque.
               </p>
-              <p style="color: grey; font-size: 15px;">Read more-></p>
+              <p class="op" style="font-size: 17px;">Read more-></p>
   
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <i style="font-size: 60px; text-align: center;" class="bi bi-calendar4-week"></i>
+              <div class="card h-100 shadow" style="border-color: white;">
+                <i style="font-size: 60px;" class="bi bi-calendar4-week commodi"><i class="bi bi-circle-fill green"></i></i>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align: center;">Velit Doloremque</h5>
-                  <p class="card-text" style="font-size: 18px;">Cumque et suscipit saepe. Est maiores
-                  autem enim facilis ut aut ipsam corporis
+                  <h5 class="card-title four"><b style="margin-left: 12px;">Velit Doloremque</b></h5><br>
+                  <p class="card-text" style="font-size: 16px;">Cumque et suscipit saepe. Est maiores<br>
+                  autem enim facilis ut aut ipsam corporis<br>
                 aut. Sed animi at autem alias eius labore.
               </p>
-              <p style="color: grey; font-size: 15px;">Read more-></p>
+              <p class="op" style="font-size: 17px;">Read more-></p>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <i style="font-size: 60px; text-align: center;" class="bi bi-chat-square-text"></i>
+              <div class="card h-100 shadow" style="border-color: white;">
+                <i style="font-size: 60px;" class="bi bi-chat-square-text commodi"><i class="bi bi-circle-fill green"></i></i>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align: center;">Dolori Architecto</h5>
-                  <p class="card-text" style="font-size: 18px;">Hic molestias ea quibusdam eos. Fugiat
-                  enim doloremque aut neque non et debitis
+                  <h5 class="card-title four"><b style="margin-left: 12px;">Dolori Architecto</b></h5><br>
+                  <p class="card-text" style="font-size: 16px;">Hic molestias ea quibusdam eos. Fugiat<br>
+                  enim doloremque aut neque non et debitis<br>
                 iure. corrupti recusandae ducimus enim.
               </p>
-              <p class="op">Read more-></p>
+              <p class="op" style="font-size: 17px;">Read more-></p>
                 </div>
         </div>
       </div>
@@ -629,7 +689,7 @@
             <div class="col-md-12 col-md-6">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="testimonialspic" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/testimonials/testimonials-2.jpg">
                         <div class="card-body">
                           <h5 style="text-align: left;"  class="card-title">Sara Wilson</h5>
@@ -640,17 +700,17 @@
                             <i class="bi bi-star-fill col"></i>
                             <i class="bi bi-star-fill col"></i>
                             <i class="bi bi-star-fill col"></i><br><br>
-                            <i style="font-size: 18px; color: black;" class="bi bi-quote">&nbsp;
+                            <i style="font-size: 18px;" class="bi bi-quote blue">&nbsp;<b style="color: black;">
                                  Export tempor illum tamen malis mailis eram quae irure esse labore
                                   quem cilium quid cillium eram malis quorum velit fore eram velit sunt 
-                                  aliqua noster fugiat irure amet legam anim culpa.&nbsp;</i>
-                                  <i style="font-size: 18px; color: black" class="bi bi-quote"></i>
+                                  aliqua noster fugiat irure amet legam anim culpa.&nbsp;</b></i>
+                                  <i style="font-size: 18px;" class="bi bi-quote blue" ></i>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="testimonialspic" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/testimonials/testimonials-3.jpg">
                         <div class="card-body">
                           <h5 style="text-align: left;" class="card-title">Jena Karlis</h5>
@@ -661,17 +721,17 @@
                             <i class="bi bi-star-fill col"></i>
                             <i class="bi bi-star-fill col"></i>
                             <i class="bi bi-star-fill col"></i><br><br>
-                            <i style="font-size: 18px; color: black;" class="bi bi-quote">&nbsp;
+                            <i style="font-size: 18px;" class="bi bi-quote blue">&nbsp;<b style="color: black;">
                                  Enim nisi export duis labore ciliumvquae magna enim sint quorum nulla 
                                  quem veniam duis minim tempor labore quem duis nosterbaute amet eram
-                                  fore quis sint minim.</i>&nbsp;
-                            <i style="font-size: 18px; color: black;" class="bi bi-quote"></i>
+                                  fore quis sint minim.&nbsp;</b></i>
+                            <i style="font-size: 18px;" class="bi bi-quote blue"></i>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="testimonialspic" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/testimonials/testimonials-4.jpg">
                         <div class="card-body">
                           <h5 style="text-align: left;" class="card-title">Matt Brandon</h5>
@@ -682,11 +742,11 @@
                             <i class="bi bi-star-fill col"></i>
                             <i class="bi bi-star-fill col"></i>
                             <i class="bi bi-star-fill col"></i><br><br>
-                            <i style="font-size: 18px; color: black;" class="bi bi-quote">&nbsp;
+                            <i style="font-size: 18px;" class="bi bi-quote blue">&nbsp;<b style="color: black;">
                                  Fugiat enim eram quae cilium dolore amet nulla multos export minim
                                   velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
                                    quem dolore labore illum veniam.</i>
-                           <i style="font-size: 18px; color: black;" class="bi bi-quote"></i>
+                           <i style="font-size: 18px;" class="bi bi-quote blue"></b></i>
 
                           </div>
                         </div>
@@ -714,11 +774,11 @@
     <div class="row">
         <div class="col-md-12 col-md-6">
             <div class="product">
-                <b style="color: black; font-size: 15px;">All</b>&nbsp;&nbsp;&nbsp;
-                <b style="color: black; font-size: 15px;">App</b>&nbsp;&nbsp;&nbsp;
-                <b style="color: black; font-size: 15px;">Product</b>&nbsp;&nbsp;
-                <b style="color: black; font-size: 15px;">Branding</b>&nbsp;&nbsp;
-                <b style="color: black; font-size: 15px;">Books</b>
+               <span class="cat"><b style= "font-size: 15px;">All</b></span>&nbsp;&nbsp;&nbsp;
+               <span class="cat"><b style="font-size: 15px;">App</b></span>&nbsp;&nbsp;&nbsp;
+               <span class="cat"><b style="font-size: 15px;">Product</b></span>&nbsp;&nbsp;
+               <span class="cat"><b style="font-size: 15px;">Branding</b></span>&nbsp;&nbsp;
+               <span class="cat"><b style="font-size: 15px;">Books</b></span>
               </div><br>   
         </div>
     </div>
@@ -731,7 +791,7 @@
             <div class="col-12 col-6">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/app-1.jpg">
                         <div class="card-body">
                           <h5 class="card-title">App 1</h5>
@@ -740,7 +800,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/product-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Product 1</h5>
@@ -749,7 +809,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/branding-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Branding 1</h5>
@@ -758,7 +818,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/books-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Books 1</h5>
@@ -767,7 +827,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/app-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">App 2</h5>
@@ -776,7 +836,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/product-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Product 2</h5>
@@ -785,7 +845,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/branding-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Branding 2</h5>
@@ -794,7 +854,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/books-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Books 2</h5>
@@ -803,7 +863,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/app-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">App 3</h5>
@@ -812,7 +872,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/product-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Product 3</h5>
@@ -821,7 +881,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img  class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/branding-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Branding 3</h5>
@@ -830,7 +890,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100 shadow" style="border-color: white;">
                         <img class="app1" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/portfolio/books-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Books 3</h5>
@@ -859,41 +919,41 @@
     <div class="col-md-12 col-md-6">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-        <div class="card h-100">
+        <div class="card h-100 shadow" style="border-color: white;">
           <img class="teampic" src="//bootstrapmade.com/demo/templates/Impact/assets/img/team/team-1.jpg" width="250px" height="300px" style="border-radius: 60px;">
           <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Walter White</h5>
-            <p class="card-text op" style="font-size: medium; text-align: center;">Web Development</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-twitter-x impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-facebook impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-instagram impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-linkedin impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p class="card-text op" style="font-size: medium; text-align: center;">Web Development</p>
+            <i class="bi bi-twitter-x impact1"></i>
+            <i class="bi bi-facebook impact1"></i>
+            <i class="bi bi-instagram impact1"></i>
+            <i class="bi bi-linkedin impact1"></i>
           </div>
         </div>
         </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100 shadow" style="border-color: white;">
           <img class="teampic" src="//bootstrapmade.com/demo/templates/Impact/assets/img/team/team-2.jpg" width="250px" height="300px" style="border-radius:60px ;">
           <div class="card-body">
           <h5 class="card-title" style="text-align: center;">Sarah Jhinson</h5>
-          <p class="card-text op" style="font-size: medium; text-align: center;">Marketing</p>&nbsp;&nbsp;&nbsp;&nbsp;
-          <i class="bi bi-twitter-x impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-facebook impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-instagram impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-linkedin impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p class="card-text op" style="font-size: medium; text-align: center;">Marketing</p>
+          <i class="bi bi-twitter-x impact1"></i>
+            <i class="bi bi-facebook impact1"></i>
+            <i class="bi bi-instagram impact1"></i>
+            <i class="bi bi-linkedin impact1"></i>
         </div>
       </div>
   </div>
-  <div class="card h-100">
+  <div class="card h-100 shadow" style="border-color: white;">
       <div class="col">
       <img class="teampic" src="https://bootstrapmade.com/demo/templates/Impact/assets/img/team/team-3.jpg" width="250px" height="300px" style="border-radius: 60px;">
       <div class="card-body">
         <h5 class="card-title" style="text-align: center;">William Anderson</h5>
-          <p class="card-text op" style="font-size: medium; text-align: center;">Content</p>&nbsp;&nbsp;&nbsp;
-          <i class="bi bi-twitter-x impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-facebook impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-instagram impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-linkedin impact1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p class="card-text op" style="font-size: medium; text-align: center;">Content</p>
+          <i class="bi bi-twitter-x impact1"></i>
+            <i class="bi bi-facebook impact1"></i>
+            <i class="bi bi-instagram impact1"></i>
+            <i class="bi bi-linkedin impact1"></i>
       </div>
     </div>
   </div>
@@ -978,20 +1038,23 @@
       </div>
       <div class="col-md-8 col-12">
         <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
+          <div class="accordion-item shadow">
             <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-               <b style="color: rgb(0,131,116);">1.</b>&nbsp;<b style="color: black;">Non consectetur a erat nam at lectus urna duis?</b>        </button>
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+               <b style="color: rgb(0,131,116);">1.</b>
+              <span class="cat"><b style="font-size: 16px;">Non consectetur a erat nam at lectus urna duis?</b></span>
+              </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item shadow">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <b style="color: rgb(0,131,116);">2.</b>&nbsp;<b style="color: black;">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</b>
+                <b style="color: rgb(0,131,116);">2.</b>
+                &nbsp;<span class="cat"><b style="font-size: 16px;">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</b></span>
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -1000,10 +1063,11 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item shadow">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <b style="color: rgb(0,131,116);">3.</b>&nbsp;<b style="color: black;"> Dolor sit amet consectetur adipiscing elit pellentesque?</b>
+                <b style="color: rgb(0,131,116);">3.</b>&nbsp; 
+                <span class="cat"><b style="font-size: 16px"> Dolor sit amet consectetur adipiscing elit pellentesque?</b></span>
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -1012,11 +1076,11 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item shadow">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <b style="color: rgb(0,131,116);">4.</b>&nbsp;<b style="color: black;"> Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</b>
-                
+                <b style="color: rgb(0,131,116);">4.</b>&nbsp;
+                <span class="cat"><b style="font-size: 16px;"> Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</b></span>
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -1028,7 +1092,8 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <b style="color: rgb(0,131,116);">5.</b>&nbsp;<b style="color: black;"> Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</b>
+                <b style="color: rgb(0,131,116);">5.</b>&nbsp;
+               <span class="cat"> <b style="font-size: 16px;"> Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</b></span>
                 
               </button>
             </h2>
@@ -1059,7 +1124,7 @@
       <div class="col-md-12 col-md-6">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 shadow" style="border-color: white;">
               <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-1.jpg">
               <div class="card-body">
                 <h6 style="text-align: start; color: grey;" class="card-title">Politics</h5>
@@ -1070,7 +1135,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 shadow" style="border-color: white;">
               <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-2.jpg">
               <div class="card-body">
                 <h6 style="color: grey; text-align: start;" class="card-title">Sports</h5>
@@ -1081,7 +1146,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 shadow" style="border-color: white;">
               <img src="https://bootstrapmade.com/demo/templates/Impact/assets/img/blog/blog-3.jpg">
               <div class="card-body">
                 <h6 style="color: grey; text-align: start;" class="card-title">Entertainment</h5>
@@ -1133,7 +1198,7 @@
       </div>
       <div class="col-md-8 col-12" id="from2">
         <form action="forms/contact.php" method="post">
-          <div class="row gy-4">
+          <div class="row gy-4 shadow" style="border-color: white; margin-top: 1px;">
             <div class="col-md-6">
               <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
             </div>
@@ -1164,10 +1229,10 @@
         <div class="col-md-5 col-12" style="color: white;">
           <h2>Impact</h2> <br>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p><br><br>
-          <i class="bi bi-twitter-x impact" style="color: white;"></i>&nbsp;&nbsp;
-          <i class="bi bi-facebook impact" style="color: white;"></i>&nbsp;&nbsp;
-          <i class="bi bi-instagram impact" style="color: white;"></i>&nbsp;&nbsp;
-          <i class="bi bi-linkedin impact" style="color: white;"></i>&nbsp;&nbsp;
+          <i class="bi bi-twitter-x impact"></i>
+          <i class="bi bi-facebook impact"></i>
+          <i class="bi bi-instagram impact"></i>
+          <i class="bi bi-linkedin impact"></i>
         </div>
         <div class="col-md-2 col-12" style="color: white;">
           <b>Useful Links</b><br><br>
